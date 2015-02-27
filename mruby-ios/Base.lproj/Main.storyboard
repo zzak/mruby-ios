@@ -24,11 +24,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceA-Sy-su7">
+                                <rect key="frame" x="218" y="328" width="165" height="36"/>
+                                <state key="normal" title="Say Hello">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sayHello" destination="BYZ-38-t0r" eventType="touchUpInside" id="SHg-3A-gc1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6ab-87-6MI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7XG-ik-kie"/>
                             <constraint firstItem="6ab-87-6MI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HBx-8H-W1E"/>
+                            <constraint firstAttribute="centerX" secondItem="ceA-Sy-su7" secondAttribute="centerX" id="UUN-mQ-goZ"/>
                         </constraints>
                     </view>
                 </viewController>

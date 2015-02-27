@@ -24,4 +24,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)sayHello {
+    UIAlertView *helloAlert = [[UIAlertView alloc]
+                               initWithTitle:@"" message:@"Hello, World!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [helloAlert show];
+}
+
 @end
