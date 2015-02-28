@@ -24,8 +24,17 @@
                                 </state>
                                 <connections>
                                     <action selector="sayHello" destination="BYZ-38-t0r" eventType="touchUpInside" id="SHg-3A-gc1"/>
+                                    <action selector="sayHello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g51-T7-OPZ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l97-Sw-VDp">
+                                <rect key="frame" x="78" y="200" width="445" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Fvn-Ak-aj6"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -34,6 +43,9 @@
                             <constraint firstAttribute="centerY" secondItem="ceA-Sy-su7" secondAttribute="centerY" id="b2V-NN-SOz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textFieldHello" destination="l97-Sw-VDp" id="f6h-8S-w1m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
