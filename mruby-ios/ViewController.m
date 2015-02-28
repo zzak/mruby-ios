@@ -28,9 +28,18 @@
 
 - (IBAction)sayHello {
     mrb_state *mrb = mrb_open();
-    char code[] = "p 'Hello, MRuby!'";
+    char code[] = "p 'Hello, ";
+    const char *helloname = [_textFieldHello.text UTF8String];
+    strcat(code, helloname);
+    strcat(code, "!'");
     
     mrb_load_string(mrb, code);
+    UIAlertView *helloAlert = [[UIAlertView alloc]
+                                    initWithTitle:@"" message:[_textFieldHello text] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    //NSLog(@"_textFieldHello: %@", [_textFieldHello text]);
+    [helloAlert show];
 }
 
+- (IBAction)sayHello:(id)sender {
+}
 @end

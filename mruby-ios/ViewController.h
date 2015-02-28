@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
 
-- (IBAction)sayHello;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldHello;
+- (IBAction)sayHello:(id)sender;
 
 @end
 
