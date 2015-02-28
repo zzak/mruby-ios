@@ -1,0 +1,10 @@
+PODS:
+  - mruby-iOS (1.1.0)
+
+DEPENDENCIES:
+  - mruby-iOS (~> 1.1.0)
+
+SPEC CHECKSUMS:
+  mruby-iOS: 7c08ecebc5f35977428d8f184aa760210751b1f3
+
+COCOAPODS: 0.35.0
