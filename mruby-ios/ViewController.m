@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "mruby/mruby.h"
+#import "mruby/mruby/compile.h"
 
 @interface ViewController ()
 
@@ -25,9 +27,10 @@
 }
 
 - (IBAction)sayHello {
-    UIAlertView *helloAlert = [[UIAlertView alloc]
-                               initWithTitle:@"" message:@"Hello, World!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [helloAlert show];
+    mrb_state *mrb = mrb_open();
+    char code[] = "p 'Hello, MRuby!'";
+    
+    mrb_load_string(mrb, code);
 }
 
 @end
