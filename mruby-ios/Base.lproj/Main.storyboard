@@ -16,18 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="6ab-87-6MI">
-                                <rect key="frame" x="119" y="285" width="362" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="362" id="86C-pb-ZLC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceA-Sy-su7">
-                                <rect key="frame" x="218" y="328" width="165" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceA-Sy-su7">
+                                <rect key="frame" x="218" y="282" width="165" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Say Hello">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.0" blue="0.10603629737851961" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="sayHello" destination="BYZ-38-t0r" eventType="touchUpInside" id="SHg-3A-gc1"/>
@@ -36,9 +29,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6ab-87-6MI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7XG-ik-kie"/>
-                            <constraint firstItem="6ab-87-6MI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HBx-8H-W1E"/>
                             <constraint firstAttribute="centerX" secondItem="ceA-Sy-su7" secondAttribute="centerX" id="UUN-mQ-goZ"/>
+                            <constraint firstAttribute="centerX" secondItem="ceA-Sy-su7" secondAttribute="centerX" id="YlF-TF-dAg"/>
+                            <constraint firstAttribute="centerY" secondItem="ceA-Sy-su7" secondAttribute="centerY" id="b2V-NN-SOz"/>
                         </constraints>
                     </view>
                 </viewController>
