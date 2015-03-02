@@ -27,8 +27,11 @@
                                     <action selector="sayHello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g51-T7-OPZ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l97-Sw-VDp">
-                                <rect key="frame" x="78" y="200" width="445" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l97-Sw-VDp">
+                                <rect key="frame" x="150" y="194" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="h2N-87-I62"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -39,8 +42,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="ceA-Sy-su7" secondAttribute="centerX" id="UUN-mQ-goZ"/>
+                            <constraint firstItem="ceA-Sy-su7" firstAttribute="top" secondItem="l97-Sw-VDp" secondAttribute="bottom" constant="52" id="VLK-UD-cgq"/>
+                            <constraint firstAttribute="centerX" secondItem="l97-Sw-VDp" secondAttribute="centerX" id="YeE-08-BZ6"/>
                             <constraint firstAttribute="centerX" secondItem="ceA-Sy-su7" secondAttribute="centerX" id="YlF-TF-dAg"/>
                             <constraint firstAttribute="centerY" secondItem="ceA-Sy-su7" secondAttribute="centerY" id="b2V-NN-SOz"/>
+                            <constraint firstAttribute="centerX" secondItem="l97-Sw-VDp" secondAttribute="centerX" id="xKg-VR-GFW"/>
                         </constraints>
                     </view>
                     <connections>
